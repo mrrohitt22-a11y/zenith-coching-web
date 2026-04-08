@@ -36,8 +36,18 @@ class P {
         ctx.globalAlpha = 1
     }
 }
-const ps = [];
-for (let i = 0; i < 90; i++) ps.push(new P());
+const getPC = () => window.innerWidth < 768 ? 35 : 85;
+let ps = [];
+function initPs() {
+    ps = [];
+    const count = getPC();
+    for (let i = 0; i < count; i++) ps.push(new P());
+}
+initPs();
+window.addEventListener('resize', () => {
+    resize();
+    if (ps.length !== getPC()) initPs();
+});
 
 function anim() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -68,7 +78,8 @@ const ro = new IntersectionObserver(entries => entries.forEach((e, i) => {
         e.target.classList.add('visible')
     }
 }), {
-    threshold: .1
+    threshold: .05,
+    rootMargin: '0px 0px -50px 0px'
 });
 document.querySelectorAll('.reveal').forEach(r => ro.observe(r));
 
@@ -308,5 +319,7 @@ function submitForm() {
         return
     }
     document.getElementById('enrollForm').style.display = 'none';
-    document.getElementById('successMsg').style.display = 'block';
+    const s = document.getElementById('successMsg');
+    s.style.display = 'block';
+    s.scrollIntoView({ behavior: 'smooth', block: 'center' });
 }
