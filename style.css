@@ -30,6 +30,7 @@ body {
     background: var(--milky);
     color: var(--text);
     overflow-x: hidden;
+    -webkit-tap-highlight-color: transparent;
 }
 
 h1,
@@ -212,7 +213,6 @@ nav.scrolled {
 }
 
 .mobile-menu {
-    display: none;
     position: fixed;
     top: 68px;
     left: 0;
@@ -222,10 +222,16 @@ nav.scrolled {
     padding: 16px 5% 28px;
     border-bottom: 1px solid var(--border);
     z-index: 999;
+    transform: translateY(-110%);
+    opacity: 0;
+    transition: transform .45s cubic-bezier(0.16, 1, 0.3, 1), opacity .3s ease;
+    pointer-events: none;
 }
 
 .mobile-menu.open {
-    display: block;
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: all;
 }
 
 .mobile-menu ul {
@@ -428,7 +434,7 @@ section {
 
 .btn-green:hover {
     background: var(--mantis2);
-    transform: translateY(-2px);
+    transform: translateY(-2px) scale(1.02);
     box-shadow: 0 10px 36px rgba(89, 199, 73, .55);
 }
 
@@ -1681,7 +1687,8 @@ footer {
 .reveal {
     opacity: 0;
     transform: translateY(26px);
-    transition: all .65s ease;
+    transition: all .65s cubic-bezier(0.25, 1, 0.5, 1);
+    will-change: transform, opacity;
 }
 
 .reveal.visible {
