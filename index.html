@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZEC – Zenith Education Centre | Jamia Nagar, New Delhi</title>
+    <meta name="description" content="Zenith Education Centre (ZEC) – Premier coaching institute in Jamia Nagar, Delhi. Expert coaching for IIT JEE, NEET, SSC, Bank Exams, UPSC, CLAT, Class IX-XII and 20+ courses. 95% success rate.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <canvas id="particles-canvas"></canvas>
+
+    <nav id="navbar">
+        <a href="#" class="logo">
+            <div class="logo-icon">ZEC</div>
+            <div class="logo-text"><strong>Zenith Education</strong><span>Centre · Delhi</span></div>
+        </a>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#faculty">Faculty</a></li>
+            <li><a href="#testimonials">Results</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#admission" class="nav-cta">Enroll Free</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <ul>
+            <li><a href="#about" onclick="closeMobile()">About ZEC</a></li>
+            <li><a href="#courses" onclick="closeMobile()">Courses</a></li>
+            <li><a href="#faculty" onclick="closeMobile()">Faculty</a></li>
+            <li><a href="#testimonials" onclick="closeMobile()">Results</a></li>
+            <li><a href="#contact" onclick="closeMobile()">Contact</a></li>
+            <li><a href="#admission" class="mobile-cta" onclick="closeMobile()">🎓 Enroll Free Now</a></li>
+        </ul>
+    </div>
+
+    <section id="hero">
+        <div class="hero-blob b1"></div>
+        <div class="hero-blob b2"></div>
+        <div class="hero-content">
+            <div class="hero-badge"><span class="dot-pulse"></span>Jamia Nagar, New Delhi · Est. 2009</div>
+            <h1 class="hero-h1">Rise to the<br><span class="green">Zenith</span> of<br><span class="stroke">Success</span></h1>
+            <p class="hero-sub">Delhi's most trusted coaching institute for IIT JEE, NEET, SSC, Banking, UPSC & 20+ courses. Expert faculty. Modern facilities. <strong style="color:var(--mantis2)">95% success rate</strong> — we don't just teach, we transform.</p>
+            <div class="hero-btns">
+                <a href="#admission" class="btn-green">🎓 Enroll Now — Free Counseling</a>
+                <a href="#courses" class="btn-outline">📚 Explore Courses</a>
+            </div>
+            <div class="hero-pills">
+                <div class="pill">🏆 95% Success Rate</div>
+                <div class="pill">👨🏫 Expert Faculty</div>
+                <div class="pill">📍 Near Jamia Metro</div>
+                <div class="pill">🖥️ Online + Offline</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="stats">
+        <div class="stats-grid">
+            <div class="stat-item reveal">
+                <div class="stat-num" data-target="5000" data-suffix="+">0</div>
+                <div class="stat-label">Students Enrolled</div>
+            </div>
+            <div class="stat-item reveal">
+                <div class="stat-num" data-target="95" data-suffix="%">0</div>
+                <div class="stat-label">Success Rate</div>
+            </div>
+            <div class="stat-item reveal">
+                <div class="stat-num" data-target="50" data-suffix="+">0</div>
+                <div class="stat-label">Expert Faculty</div>
+            </div>
+            <div class="stat-item reveal">
+                <div class="stat-num" data-target="15" data-suffix="+ Yrs">0</div>
+                <div class="stat-label">Years of Excellence</div>
+            </div>
+            <div class="stat-item reveal">
+                <div class="stat-num" data-target="20" data-suffix="+">0</div>
+                <div class="stat-label">Courses Offered</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="about-grid">
+            <div class="reveal">
+                <div class="section-tag">✦ About ZEC</div>
+                <h2 class="section-title">One-Stop Solution for <span>All Academic Goals</span></h2>
+                <p class="section-sub">Zenith Education Centre (ZEC) is a premier coaching institute in Jamia Nagar, Delhi — dedicated to providing top-notch coaching for competitive exams, school tuitions, and professional certifications. Our blended teaching methodology ensures holistic student development.</p>
+                <p class="section-sub" style="margin-top:12px">Backed by seasoned educators and subject-matter experts, ZEC has built an unparalleled reputation for producing toppers, government officers, doctors, engineers, and banking professionals.</p>
+                <div class="values-row">
+                    <div class="value-card reveal">
+                        <div class="v-icon">🎯</div>
+                        <h4>Our Mission</h4>
+                        <p>To make quality education accessible and transform every student into a confident achiever.</p>
+                    </div>
+                    <div class="value-card reveal">
+                        <div class="v-icon">🌟</div>
+                        <h4>Our Vision</h4>
+                        <p>To be Delhi's most trusted name in competitive coaching with pan-India reach.</p>
+                    </div>
+                    <div class="value-card reveal">
+                        <div class="v-icon">🤝</div>
+                        <h4>Our Values</h4>
+                        <p>Integrity, student-first approach, continuous innovation and community growth.</p>
+                    </div>
+                    <div class="value-card reveal">
+                        <div class="v-icon">💡</div>
+                        <h4>Methodology</h4>
+                        <p>Blended teaching — traditional classroom wisdom meets modern EdTech tools.</p>
+                    </div>
+                </div>
+            </div>
+            <div style="position:relative" class="reveal">
+                <div class="about-card-main">
+                    <span class="about-icon-big">🏛️</span>
+                    <h3>ZEC — Jamia Nagar's Most Trusted Coaching</h3>
+                    <p>Located at 84-B, Tikona Park, Okhla Road — just minutes from Jamia Nagar Metro Station. Modern classrooms, a well-stocked library, digital resources, and a faculty that genuinely cares about your growth.</p>
+                    <div class="quote-strip">"Best institute of Jamia Nagar where IITians and doctors are nourishing students for NEET and JEE." — Student Review</div>
+                    <div class="float-badge tr">
+                        <div>
+                            <div class="num">15+</div>
+                            <div class="lbl">Years Active</div>
+                        </div>
+                    </div>
+                    <div class="float-badge bl">
+                        <div>
+                            <div class="num">5000+</div>
+                            <div class="lbl">Alumni</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="courses">
+        <div class="courses-header reveal">
+            <div class="section-tag">✦ Our Programs</div>
+            <h2 class="section-title">20+ Courses Across <span>Every Domain</span></h2>
+            <p class="section-sub">From Class IX to UPSC — ZEC covers every academic milestone in your journey.</p>
+        </div>
+        <div class="filter-tabs" id="filterTabs">
+            <button class="tab-btn active" data-filter="all">All Courses</button>
+            <button class="tab-btn" data-filter="school">School</button>
+            <button class="tab-btn" data-filter="medical">Medical</button>
+            <button class="tab-btn" data-filter="engineering">Engineering</button>
+            <button class="tab-btn" data-filter="govt">Govt Jobs</button>
+            <button class="tab-btn" data-filter="banking">Banking</button>
+            <button class="tab-btn" data-filter="law">Law</button>
+            <button class="tab-btn" data-filter="defence">Defence</button>
+            <button class="tab-btn" data-filter="management">Management</button>
+        </div>
+        <div class="courses-grid" id="coursesGrid"></div>
+    </section>
+
+    <section id="why">
+        <div class="why-grid">
+            <div class="reveal">
+                <div class="section-tag">✦ Why Choose ZEC</div>
+                <h2 class="section-title">The <span>ZEC Advantage</span> — Feel the Difference</h2>
+                <div class="why-features">
+                    <div class="why-feat reveal">
+                        <div class="why-feat-icon">👨🏫</div>
+                        <div>
+                            <h4>Seasoned Expert Faculty</h4>
+                            <p>Educators with decades of teaching experience and deep subject mastery in every class.</p>
+                        </div>
+                    </div>
+                    <div class="why-feat reveal">
+                        <div class="why-feat-icon">🧠</div>
+                        <div>
+                            <h4>Innovative Teaching Methodology</h4>
+                            <p>Blends classical pedagogy with modern tech — concept videos, doubt sessions, live tests.</p>
+                        </div>
+                    </div>
+                    <div class="why-feat reveal">
+                        <div class="why-feat-icon">📊</div>
+                        <div>
+                            <h4>Regular Mock Tests & Analysis</h4>
+                            <p>Weekly assessments, progress tracking, and detailed performance reports for each student.</p>
+                        </div>
+                    </div>
+                    <div class="why-feat reveal">
+                        <div class="why-feat-icon">🧭</div>
+                        <div>
+                            <h4>Personalized Career Counseling</h4>
+                            <p>One-to-one career guidance to help students choose the right path and stay motivated.</p>
+                        </div>
+                    </div>
+                    <div class="why-feat reveal">
+                        <div class="why-feat-icon">🏫</div>
+                        <div>
+                            <h4>Modern Facilities & Resources</h4>
+                            <p>AC classrooms, digital boards, a well-stocked library, and online study portal access.</p>
+                        </div>
+                    </div>
+                    <div class="why-feat reveal">
+                        <div class="why-feat-icon">🌐</div>
+                        <div>
+                            <h4>Both Online & Offline Classes</h4>
+                            <p>Flexible study modes — attend from home or at our Jamia Nagar centre.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="why-visual reveal">
+                <div class="big-percent">95%</div>
+                <h3>Exam Success Rate</h3>
+                <p>Over 95% of ZEC students clear their targeted exams on the first attempt. Our results speak louder than any promise.</p>
+                <div class="mini-stats">
+                    <div class="mini-stat" style="text-align:center">
+                        <div class="num">500+</div>
+                        <div class="lbl">Govt Officers</div>
+                    </div>
+                    <div class="mini-stat" style="text-align:center">
+                        <div class="num">300+</div>
+                        <div class="lbl">Doctors & Engineers</div>
+                    </div>
+                    <div class="mini-stat" style="text-align:center">
+                        <div class="num">800+</div>
+                        <div class="lbl">Banking Selections</div>
+                    </div>
+                </div>
+                <a href="#admission" class="btn-milky">🎯 Enroll & Join the Winners</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="faculty">
+        <div class="faculty-header reveal">
+            <div class="section-tag">✦ Our Faculty</div>
+            <h2 class="section-title">Meet the <span>Masterminds</span> Behind Your Success</h2>
+            <p class="section-sub" style="margin:0 auto">Handpicked educators with proven track records and decades of experience.</p>
+        </div>
+        <div class="faculty-grid" id="facultyGrid"></div>
+    </section>
+
+    <section id="testimonials">
+        <div class="testi-header reveal">
+            <div class="section-tag">✦ Student Reviews</div>
+            <h2 class="section-title">Thousands of <span>Success Stories</span></h2>
+            <p class="section-sub" style="margin:0 auto">Real students. Real exams. Real results.</p>
+        </div>
+        <div class="testi-track-wrapper">
+            <div class="testi-track" id="testiTrack"></div>
+        </div>
+    </section>
+
+    <section id="modes">
+        <div style="text-align:center;margin-bottom:44px" class="reveal">
+            <div class="section-tag">✦ Flexible Learning</div>
+            <h2 class="section-title">Learn Your Way — <span>Offline or Online</span></h2>
+            <p class="section-sub" style="margin:0 auto">ZEC provides both classroom and digital learning — designed for your convenience.</p>
+        </div>
+        <div class="modes-grid">
+            <div class="mode-card offline reveal">
+                <span class="mode-icon">🏫</span>
+                <h3>Offline Classes</h3>
+                <p class="mode-sub">Experience the energy of a real classroom at our Jamia Nagar centre — near the Metro Station.</p>
+                <ul class="mode-features">
+                    <li>AC classrooms with digital boards</li>
+                    <li>Face-to-face mentoring & doubt clearing</li>
+                    <li>Peer learning & competitive environment</li>
+                    <li>Physical study materials & notes</li>
+                    <li>Library access — study hall included</li>
+                    <li>Career counseling sessions</li>
+                </ul>
+                <a href="#admission" class="btn-milky">Join Offline Batch →</a>
+            </div>
+            <div class="mode-card online reveal">
+                <span class="mode-icon">🖥️</span>
+                <h3>Online Classes</h3>
+                <p class="mode-sub">Study from home with live interactive sessions, recorded lectures, and digital test series.</p>
+                <ul class="mode-features">
+                    <li>Live interactive sessions with ZEC faculty</li>
+                    <li>Recorded lectures — watch anytime</li>
+                    <li>Online mock tests & performance analysis</li>
+                    <li>PDF notes & digital study material</li>
+                    <li>WhatsApp & email doubt support</li>
+                    <li>Accessible from anywhere in India</li>
+                </ul>
+                <a href="#admission" class="btn-green">Join Online Batch →</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="admission">
+        <div class="admission-grid">
+            <div class="reveal">
+                <div class="section-tag">✦ Admissions Open</div>
+                <h2 class="section-title">Your Journey to <span>Success Starts Now</span></h2>
+                <p class="section-sub">Enrolling at ZEC is simple. Follow these steps and our counselor will guide you through everything.</p>
+                <div class="steps">
+                    <div class="step">
+                        <div class="step-num">1</div>
+                        <div>
+                            <h4>Fill the Enquiry Form</h4>
+                            <p>Share your details and the exam you're targeting. Our team responds within 2 hours.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-num">2</div>
+                        <div>
+                            <h4>Free Career Counseling</h4>
+                            <p>Meet our expert counselor who will assess your level and suggest the best batch and course.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-num">3</div>
+                        <div>
+                            <h4>Choose Your Batch & Mode</h4>
+                            <p>Select offline or online, morning or evening batch — as per your schedule and preference.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-num">4</div>
+                        <div>
+                            <h4>Pay & Start Learning</h4>
+                            <p>Complete the fee payment and receive your study materials. Your preparation begins on Day 1.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="reveal">
+                <div class="enroll-form" id="enrollForm">
+                    <h3>📋 Free Enrollment Enquiry</h3>
+                    <p>Fill in your details — we'll call you back within 2 hours!</p>
+                    <div class="form-row">
+                        <div class="form-group"><label>Full Name *</label><input type="text" id="fname" placeholder="Rahul Sharma"></div>
+                        <div class="form-group"><label>Phone Number *</label><input type="tel" id="fphone" placeholder="+91 98XXXXXXXX"></div>
+                    </div>
+                    <div class="form-group"><label>Email Address</label><input type="email" id="femail" placeholder="you@email.com"></div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Target Exam *</label>
+                            <select id="fexam">
+                                <option value="">Select Exam / Course</option>
+                                <option>IIT JEE (Main + Advanced)</option>
+                                <option>NEET / Medical Entrance</option>
+                                <option>Class IX – X (All Subjects)</option>
+                                <option>Class XI – XII (All Subjects)</option>
+                                <option>SSC CGL / CHSL / MTS</option>
+                                <option>Bank PO / Clerk (IBPS, SBI)</option>
+                                <option>UPSC / IAS Foundation</option>
+                                <option>CLAT / Law Entrance</option>
+                                <option>CAT / MBA Entrance</option>
+                                <option>NDA / CDS / Defence</option>
+                                <option>CTET / TET / Teacher Exam</option>
+                                <option>Railway RRB NTPC / JE</option>
+                                <option>Vedic Maths / Olympiad</option>
+                                <option>Other / Not Sure</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Preferred Mode</label>
+                            <select id="fmode">
+                                <option value="">Select Mode</option>
+                                <option>Offline – Jamia Nagar Centre</option>
+                                <option>Online – Live Classes</option>
+                                <option>Both (Hybrid)</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group"><label>Message / Any Questions?</label><textarea id="fmsg" placeholder="Tell us about your preparation level, preferred batch timings..."></textarea></div>
+                    <button class="submit-btn" onclick="submitForm()">🚀 Submit Enquiry — It's Free!</button>
+                </div>
+                <div class="success-msg" id="successMsg">
+                    <div class="tick">🎉</div>
+                    <h4>Enquiry Submitted Successfully!</h4>
+                    <p>Thank you! Our counselor will call you within 2 hours.<br>WhatsApp us directly at <a href="https://wa.me/919891350707" style="color:var(--mantis2)">+91 98913 50707</a></p>
+                    <br><a href="https://wa.me/919891350707" class="btn-green" style="display:inline-flex;margin-top:8px">💬 Chat on WhatsApp Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div style="text-align:center;margin-bottom:44px" class="reveal">
+            <div class="section-tag">✦ Contact Us</div>
+            <h2 class="section-title">We're Right <span>Here for You</span></h2>
+            <p class="section-sub" style="margin:0 auto">Visit us at our centre or reach out online — we're always happy to help.</p>
+        </div>
+        <div class="contact-grid">
+            <div class="contact-info reveal">
+                <div class="contact-item">
+                    <div class="ci-icon">📍</div>
+                    <div>
+                        <div class="ci-label">Address</div>
+                        <div class="ci-value">84-B, Tikona Park, Okhla Road,<br>Jamia Nagar, New Delhi – 110025</div>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="ci-icon">📞</div>
+                    <div>
+                        <div class="ci-label">Phone / WhatsApp</div>
+                        <div class="ci-value"><a href="tel:+919891350707">+91 98913 50707</a></div>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="ci-icon">🕐</div>
+                    <div>
+                        <div class="ci-label">Working Hours</div>
+                        <div class="ci-value">Monday – Saturday: 9:00 AM – 5:00 PM</div>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="ci-icon">🚇</div>
+                    <div>
+                        <div class="ci-label">Nearest Metro</div>
+                        <div class="ci-value">Jamia Millia Islamia Metro (Pink Line)</div>
+                    </div>
+                </div>
+            </div>
+            <div class="reveal">
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3505.4!2d77.2957!3d28.5501!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce17b5a000001%3A0x123!2zSmFtaWEgTmFnYXIsIE5ldyBEZWxoaQ!5e0!3m2!1sen!2sin!4v1680000000000" allowfullscreen loading="lazy"></iframe>
+                </div>
+                <div style="margin-top:18px;display:flex;gap:12px;flex-wrap:wrap">
+                    <a href="https://wa.me/919891350707" class="btn-green">💬 WhatsApp Us</a>
+                    <a href="tel:+919891350707" class="btn-outline">📞 Call Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <div class="logo">
+                    <div class="logo-icon">ZEC</div>
+                    <div class="logo-text"><strong>Zenith Education Centre</strong><span>Jamia Nagar, New Delhi</span></div>
+                </div>
+                <p>Delhi's most trusted coaching institute for competitive exams and school tuitions. Where dreams meet dedication and toppers are born.</p>
+                <div class="social-row">
+                    <a class="social-btn" href="#">📘</a><a class="social-btn" href="#">📸</a>
+                    <a class="social-btn" href="#">▶️</a><a class="social-btn" href="https://wa.me/919891350707">💬</a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h5>Quick Links</h5>
+                <ul>
+                    <li><a href="#about">About ZEC</a></li>
+                    <li><a href="#courses">All Courses</a></li>
+                    <li><a href="#faculty">Faculty</a></li>
+                    <li><a href="#testimonials">Student Reviews</a></li>
+                    <li><a href="#admission">Enroll Now</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h5>Top Courses</h5>
+                <ul>
+                    <li><a href="#">IIT JEE Coaching</a></li>
+                    <li><a href="#">NEET / Medical</a></li>
+                    <li><a href="#">SSC CGL / CHSL</a></li>
+                    <li><a href="#">Bank PO / Clerk</a></li>
+                    <li><a href="#">UPSC / IAS</a></li>
+                    <li><a href="#">CLAT / Law</a></li>
+                    <li><a href="#">Class IX–XII</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h5>Contact Info</h5>
+                <ul>
+                    <li><a href="#">📍 84-B Tikona Park, Okhla Road</a></li>
+                    <li><a href="#">Jamia Nagar, New Delhi – 110025</a></li>
+                    <li><a href="tel:+919891350707">📞 +91 98913 50707</a></li>
+                    <li><a href="#">🕐 Mon–Sat: 9AM – 5PM</a></li>
+                    <li><a href="https://wa.me/919891350707">💬 WhatsApp Chat</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Zenith Education Centre (ZEC). All rights reserved.</p>
+            <p>Built for student success · <a href="https://wa.me/919891350707">Contact Us</a></p>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/919891350707" class="wa-float" target="_blank">💬</a>
+
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+</body>
+
+</html>
